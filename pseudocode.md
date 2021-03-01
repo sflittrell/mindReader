@@ -10,7 +10,7 @@ Objects:
     Answer: The symbol to show up at the end of the game, it must correspond to a number divisible by 9
 
 Variables:
-    currentState: the state at that given time (on load the state would be set to 0 because that is the )
+    currentState: the state at that given time (on load the state would be set to 0 because that is the array value of the first page)
 
 
 State in an array [0, 1, 2, 3, 4, 5, 6]
@@ -29,7 +29,7 @@ State in an array [0, 1, 2, 3, 4, 5, 6]
 
 Start Program:
 
-    LET specialSymbol = '';
+    LET specialSym = '';
     LET symbols = [!, @, #, $, %, ^, &, *, ~];
     LET numSymList = [];
     LET currentState = 0
