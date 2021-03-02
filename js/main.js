@@ -42,12 +42,14 @@ function reset() {
     render();
 }
 
+addSym();
+specSym();
 
 
 let state = {
     mainText: ['I can read your mind', 'Pick a number from 01 - 99', 'Add both digits together to get a new number', 'Subtract your new number from the original numbers', numSymList, specialSym],
     nextButton: ['invisible', 'visible', 'visible', 'visible', 'visible', 'invisible'],
-    exampleText: ['', 'when you have your number click next', 'Ex: 14 is 1 + 4 = 5 click next to proceed', 'Ex: 14 - 5 = 9 click next to proceed', 'Find your new Number. Note the symbol beside the number', 'Your symbol is: ' + specialSym],
+    exampleText: ['', 'when you have your number click next', 'Ex: 14 is 1 + 4 = 5 click next to proceed', 'Ex: 14 - 5 = 9 click next to proceed', 'Scroll to find your new Number. Note the symbol beside the number', 'Your symbol is: ' + specialSym],
     goButton: ['visible', 'invisible', 'invisible', 'invisible', 'invisible', 'invisible'],
     backButton: [ 'invisible', 'visible', 'visible', 'visible', 'visible', 'invisible'],
     resetButton: ['invisible', 'invisible', 'invisible', 'invisible', 'invisible', 'visible']
