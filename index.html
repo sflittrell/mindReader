@@ -13,14 +13,16 @@
   </head>
   <body>
     <div class="container h-100">
-        <div class="row text-center h-25">
+        <div class="row text-center h-50">
             <div class="col-sm h-75 overflow-auto fs-1" id="header">
                 <!-- Main text -->
             </div>
         </div>
         <div class="row">
-            <div class="col-sm">
-                <button type="button" class="btn btn-primary invisible" id="nextBtn" onclick="next()">Next</button>
+            <div class="col-sm text-center">
+                <div id="cloak" class="text-center">
+                    <button type="button" class="btn btn-primary fs-1" id="nextBtn" onclick="next()">Next</button>
+                </div>
             </div>
         </div>
         <hr>
@@ -29,11 +31,9 @@
                 <!-- Example text -->
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm">
-                <button type="button" class="btn btn-primary rounded-circle" id="goBtn" onclick="next()">Go</button>
-                <button type="button" class="btn btn-primary invisible" id="backBtn" onclick="back()">Back</button>
-                <button type="button" class="btn btn-primary rounded-circle invisible" id="resetBtn" onclick="reset()">Reset</button>
+        <div class="row h-25">
+            <div class="col-sm h-25">
+                <button type="button" class="btn btn-primary rounded-circle fs-1" id="backBtn" onclick="backButton()"></button>
             </div>
         </div>
     </div>
