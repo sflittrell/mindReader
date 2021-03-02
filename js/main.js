@@ -1,21 +1,21 @@
 
 let specialSym = '';
-let symbols = ['~', '!', '@', '#', '$', '%', '^', '&', '*'];
+let symbols = ['~', '!', '@', '#', '$', '%', '^', '&', '*', '?'];
 let numSymList = '';
 let currentState = 0;
 
 function random() {
-    return Math.floor(Math.random() * 10);
+    return Math.floor(Math.random() * 10); // creates a random number between 0 - 9
 }
 
 function specSym() {
-    specialSym = symbols[random()];
-    return specialSym;
+    return symbols[random()]; // picks a random symbol from the symbol array and assigns it to the specialSym variable
 }
 
 function addSym() {
-    specialSym = specSym();
-    for (i = 0; i < 100; i++) {
+    numSymList = ''
+    specialSym = specSym(); //sets the special symbol
+    for (let i = 0; i < 100; i++) {
         if (i % 9 === 0) {
             numSymList += (i + ' - ' + specialSym + '<br>');
         } else {
@@ -47,10 +47,10 @@ function reset() {
 let state = {
     mainText: ['I can read your mind', 'Pick a number from 01 - 99', 'Add both digits together to get a new number', 'Subtract your new number from the original numbers', numSymList, specialSym],
     nextButton: ['invisible', 'visible', 'visible', 'visible', 'visible', 'invisible'],
-    exampleText: ['', 'when you have your number click next', 'Ex: 14 is 1 + 4 = 5 click next to proceed', 'Ex: 14 - 5 = 9 click next to proceed', 'Find your new Number. Noter the symbol beside the number', 'Your symbol is: ' + specialSym],
+    exampleText: ['', 'when you have your number click next', 'Ex: 14 is 1 + 4 = 5 click next to proceed', 'Ex: 14 - 5 = 9 click next to proceed', 'Find your new Number. Note the symbol beside the number', 'Your symbol is: ' + specialSym],
     goButton: ['visible', 'invisible', 'invisible', 'invisible', 'invisible', 'invisible'],
     backButton: [ 'invisible', 'visible', 'visible', 'visible', 'visible', 'invisible'],
-    resetButton: ['invisible', 'invisible', 'invisible', 'invisible', 'invisible', 'visible'],
+    resetButton: ['invisible', 'invisible', 'invisible', 'invisible', 'invisible', 'visible']
 
 }
 
